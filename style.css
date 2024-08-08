@@ -1,0 +1,67 @@
+ .box1, .laptop_large, .laptop, .Tablet, .Mobile {
+            text-align: center;
+            padding-top: 3px;
+            border-radius: 25px;
+            margin-top: 20px;
+            display: none; /* Hide all by default */
+        }
+
+        .box1 {
+            height: 400px;
+            width: 600px;
+            background-color: aquamarine;
+        }
+
+        .laptop_large {
+            height: 400px;
+            width: 600px;
+            background-color: green;
+        }
+
+        .laptop {
+            height: 330px;
+            width: 480px;
+            background-color: darkgoldenrod;
+
+        }
+
+        .Tablet {
+            height: 280px;
+            width: 460px;
+            background-color: aqua;
+        }
+
+        .Tablet p, .Mobile p,.laptop {
+            font-size: 20px;
+        }
+
+        .Mobile {
+            height: 200px;
+            width: 220px;
+            background-color: crimson;
+        }
+
+        @media screen and (max-width: 768px) {
+            .Mobile {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+            .Tablet {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+            .laptop {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            .laptop_large {
+                display:block;
+            }
+        }
+    
